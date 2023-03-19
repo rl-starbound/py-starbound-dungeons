@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=40.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-starbound-dungeons"
+version = "0.1.0"
+authors = [
+  { name="rl.starbound" },
+]
+description = "Utility for indexing Starbound dungeon files"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "JSON-minify>=0.3.0",
+  "Pillow>=9.4.0",
+  "pytiled-parser>=2.2.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rl-starbound/py-starbound-dungeons"
+"Bug Tracker" = "https://github.com/rl-starbound/py-starbound-dungeons/issues"
+
+[project.scripts]
+pystarbound-dungeons-indexer = "starbound_dungeons.indexer:main"

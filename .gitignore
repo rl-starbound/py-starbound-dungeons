@@ -1,0 +1,7 @@
+*~
+*.pyc
+*.pyo
+build/
+dist/
+py_starbound_dungeons.egg-info/
+README.html
